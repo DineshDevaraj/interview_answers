@@ -1,2 +1,2 @@
-# treebo-hotel-booking
-A simple program to manage check-in and check-out in in-memory data-structure
+# Collaborative document editing
+Design a system for collaborative document editing and database model for the same
