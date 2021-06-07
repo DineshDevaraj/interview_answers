@@ -1,4 +1,4 @@
-# Treebo Hotel
+# Ajira Tech
 I took up interview with Ajira Tech on 2021. There were multiple round as shown below.
 
 Date | Day | Round Number | Round Name
