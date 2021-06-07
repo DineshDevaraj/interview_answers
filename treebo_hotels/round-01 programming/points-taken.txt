@@ -1,0 +1,17 @@
+
+user has no control over the room selection
+partial booking is not allowed
+partial cancel is allowed - is not there
+check-in check-out
+
+allocation mechanism
+
+	bottom to top or 
+	top to bottom
+
+hotel details from file
+	
+	hotel-name
+	number of floors
+	rooms per floor (assume equal number of rooms in each floor)
+	prefered allocation mechanism
