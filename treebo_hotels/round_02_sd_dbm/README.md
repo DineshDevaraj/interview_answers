@@ -1,2 +1,2 @@
-# Collaborative document editing
-Design a system for collaborative document editing and database model for the same
+# Collaborative Document Editing
+Design a system and database model for collaborative document editing like Google Docs
