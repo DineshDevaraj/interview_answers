@@ -6,4 +6,4 @@ Start Date | End Date | Method | Round Number | Round Name
 
 # Usage
 
-python prodapt_accounting.py --bank-name bank1 --input-filepath input_files/bank1.csv --log-level DEBUG
+$> python prodapt_accounting.py --bank-name bank1 --input-filepath input_files/bank1.csv --log-level DEBUG
