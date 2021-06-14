@@ -3,8 +3,9 @@ import logging
 from config.cliargs import CliArgs
 from config.bank_config import BankConfig
 from helper.enum_definitions import InputMethodEnum
-from config.application_config import FileReaderConfig
 from config.application_config import LoggingConfig
+from config.application_config import FileReaderConfig
+
 
 """
     The higherarchy of configurations are in the following order

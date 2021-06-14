@@ -2,10 +2,10 @@
 import sys
 import logging
 
-from helper.enum_definitions import LoggingDestinationEnum
-from helper.enum_definitions import DBMSNameEnum
-from dataclasses import dataclass
 from abc import ABC
+from dataclasses import dataclass
+from helper.enum_definitions import DBMSNameEnum
+from helper.enum_definitions import LoggingDestinationEnum
 
 @dataclass
 class LoggingConfig:

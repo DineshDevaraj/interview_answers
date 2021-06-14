@@ -6,7 +6,8 @@ from helper.enum_definitions import InputMethodEnum
 from helper.enum_definitions import InputFormatEnum
 from helper.enum_definitions import AmountFormatEnum
 from helper.enum_definitions import DatetimeFromatEnum
-from helper.exception_definitions import InvalidArgument, InvalidField
+
+from helper.exception_definitions import InvalidField
 
 @dataclass
 class BankConfig:

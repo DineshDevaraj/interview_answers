@@ -1,11 +1,9 @@
 
 import logging
 
-from helper.metaclasses_definition import Singleton
+from logging.handlers import RotatingFileHandler
 from config.application_config import LoggingConfig
 from config.application_config import LoggingDestinationEnum
-
-from logging.handlers import RotatingFileHandler
 
 def init_logger():
 
