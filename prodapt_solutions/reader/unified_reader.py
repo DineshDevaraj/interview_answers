@@ -32,7 +32,7 @@ class InputReader(ABC):
         return inputReader
 
     @abstractmethod
-    def readblock(self, size: int = 1024):
+    def read_block(self, size: int = 1024):
 
         """
             if InputMethod is File:
@@ -51,7 +51,7 @@ class InputReader(ABC):
         pass
 
     @abstractmethod
-    def readone(self):
+    def read_one(self):
 
         """
             if InputMethod is File:
@@ -69,7 +69,7 @@ class InputReader(ABC):
         pass
 
     @abstractmethod
-    def readall(self):
+    def read_all(self):
 
         """
             if InputMethod is File:

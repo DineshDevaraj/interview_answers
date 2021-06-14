@@ -8,11 +8,11 @@ class RestReader(InputReader):
         # initialize flask-rest server
         pass
     
-    def readblock(size: int = 1024):
+    def read_block(size: int = 1024):
         pass
 
-    def readone():
+    def read_one():
         pass
 
-    def readall():
+    def read_all():
         pass

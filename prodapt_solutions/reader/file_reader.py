@@ -37,12 +37,12 @@ class FileReader(InputReader):
 
         log.error("Delete operation is not allowed for file_format")
 
-    def readblock(self, size: int = 1024):
+    def read_block(self, size: int = 1024):
         pass
 
-    def readone(self):
+    def read_one(self):
         pass
 
-    def readall(self):
+    def read_all(self):
         
         return open(self.filepath).read()

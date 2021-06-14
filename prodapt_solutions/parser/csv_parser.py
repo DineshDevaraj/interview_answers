@@ -19,7 +19,7 @@ class CsvParser(InputParser):
 
     def __iter__(self):
 
-        csvReader = DictReader(self.ipReader.readall().split("\n"))
+        csvReader = DictReader(self.ipReader.read_all().split("\n"))
         log.debug(csvReader.fieldnames)
         for row in csvReader: yield row
 
