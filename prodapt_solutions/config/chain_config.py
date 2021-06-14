@@ -1,8 +1,10 @@
 
+import logging
 from config.cliargs import CliArgs
 from config.bank_config import BankConfig
 from helper.enum_definitions import InputMethodEnum
 from config.application_config import FileReaderConfig
+from config.application_config import LoggingConfig
 
 """
     The higherarchy of configurations are in the following order
@@ -21,3 +23,10 @@ def chain_bank_config(bankConfig: BankConfig):
         )
 
     return bankConfig
+
+def chain_logging_config():
+    
+    if CliArgs.LogLevel is not None:
+        LoggingConfig.Level = logging.getLevelName(
+            CliArgs.LogLevel
+        )

@@ -1,5 +1,4 @@
 
-import sys
 import logging
 
 from helper.metaclasses_definition import Singleton
@@ -26,6 +25,12 @@ def init_logger():
     formatter = logging.Formatter(format)
     destHandler.setFormatter(formatter)
     logger.addHandler(destHandler)
+
+    def update():
+        # you can have update handling here
+        logger.setLevel(LoggingConfig.Level)
+    
+    logger.update = update
 
     return logger
 

@@ -15,7 +15,7 @@ class LoggingConfig:
     Filepath = "./logs/evalsr.log"
     MaxBytes = 8*1024*1024
     BackupCount = 10
-    Level = logging.DEBUG
+    Level = logging.INFO
     
     Destination = LoggingDestinationEnum.Console
 
