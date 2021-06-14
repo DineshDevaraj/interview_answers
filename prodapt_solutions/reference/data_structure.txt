@@ -1,0 +1,76 @@
+
+Global Values
+
+	input_method  :enum = file, rest or db
+	input_format  :enum = csv, json or xml
+
+	datetime_format :enum = split or join
+
+	amount_format :enum = split or join
+
+	tx_direction  :enum = add, remove
+
+	-- if we choose we can also have enum for
+	-- amount_integer_name and
+	-- amount_fraction_name
+
+Bank Level Fields
+
+	bank_name
+
+	input_method: input_method_enum
+	input_format: input_format_enum
+
+	datetime_format: datetime_format_enum
+	date_field_name: string
+	time_field_name: string
+
+	if datetime_format == datetime_format_enum.split:
+		datetime_field_name: tuple = (date_field_name, time_field_name)
+	else:
+		datetime_field_name: string = timestamp, date_readable, date, etc...
+
+	amount_format: amount_format_enum
+
+	amount_integer_name: string  = dolar, pound, etc...
+	amount_fraction_name: string = cents, paisa, etc...
+
+	if amount_format == split:
+		amount_field_name: tuple = (amount_integer_name, amount_fraction_name)
+	else:
+		amount_field_name: string = amount, amounts, etc...
+
+	tx_direction_name: string = type, transaction, etc...
+
+	from_field_name: string = from, sender, etc...
+	to_field_name: string = to, receiver, etc...
+
+Transaction Level Fields
+
+	datetime
+	to_userId
+	from_userId
+	amount_integer
+	amount_fraction
+	amount_decimal
+	tx_direction
+
+Sample Bank Config
+
+	bank_name = bank1
+
+	input_method = input_method_enum.file
+	input_format = input_format_enum.csv
+
+	datetime_format = datetime_format_enum.join
+	datetime_field_name = timestamp
+	-- for this configuration you can ignore
+	-- date_field_name and time_field_name
+
+	amount_format = amount_format_enum.join
+	amount_field_name = amount
+	-- for this configuration you can ignore
+	-- amount_fraction_name and
+	-- amount_integer_name
+
+	tx_direction_name = type
